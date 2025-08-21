@@ -1,0 +1,17 @@
+package com.alarmsystem.Prezenter.Application;
+
+import com.alarmsystem.Model.Petition;
+
+public abstract class Proofreader {
+
+	protected void checkPetition(Petition petition) {
+		// TODO - implement Proofreader.checkPetition
+
+	}
+
+	protected void directToImprove(Petition petition) {
+		// TODO - implement Proofreader.directToImprove
+		throw new UnsupportedOperationException();
+	}
+
+}

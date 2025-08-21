@@ -1,0 +1,74 @@
+# Clients Database
+
+## Client 1
+ID: 1001
+ContractID: 5001
+Name: Jan
+Surname: Kowalski
+Email: jan.kowalski@email.com
+PESEL: 82091512345
+Address: ul. Kwiatowa 15, 00-001 Warszawa
+ContractDate: 2024-01-15
+OwnedSensors: [
+    - MotionSensor(id: 101, status: ACTIVE)
+    - SmokeSensor(id: 102, status: ACTIVE)
+    - WindowSensor(id: 103, status: INACTIVE)
+]
+
+## Client 2
+ID: 1002
+ContractID: 5002
+Name: Anna
+Surname: Nowak
+Email: anna.nowak@email.com
+PESEL: 90121523456
+Address: ul. Słoneczna 7/4, 00-002 Warszawa
+ContractDate: 2024-02-01
+OwnedSensors: [
+    - MotionSensor(id: 201, status: ACTIVE)
+    - DoorSensor(id: 202, status: ACTIVE)
+]
+
+## Client 3
+ID: 1003
+ContractID: 5003
+Name: Tomasz
+Surname: Wiśniewski
+Email: tomasz.wisniewski@email.com
+PESEL: 75052634567
+Address: ul. Leśna 22, 00-003 Warszawa
+ContractDate: 2023-12-10
+OwnedSensors: [
+    - SmokeSensor(id: 301, status: ACTIVE)
+    - MotionSensor(id: 302, status: ACTIVE)
+    - WindowSensor(id: 303, status: ACTIVE)
+    - DoorSensor(id: 304, status: ACTIVE)
+]
+
+## Client 4
+ID: 1004
+ContractID: 5004
+Name: Maria
+Surname: Wójcik
+Email: maria.wojcik@email.com
+PESEL: 88090745678
+Address: ul. Polna 3/12, 00-004 Warszawa
+ContractDate: 2024-01-20
+OwnedSensors: [
+    - MotionSensor(id: 401, status: ACTIVE)
+]
+
+## Client 5
+ID: 1005
+ContractID: 5005
+Name: Piotr
+Surname: Kowalczyk
+Email: piotr.kowalczyk@email.com
+PESEL: 95032856789
+Address: ul. Długa 45, 00-005 Warszawa
+ContractDate: 2023-11-15
+OwnedSensors: [
+    - SmokeSensor(id: 501, status: ACTIVE)
+    - WindowSensor(id: 502, status: ACTIVE)
+    - WindowSensor(id: 503, status: INACTIVE)
+]
