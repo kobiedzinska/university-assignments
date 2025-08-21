@@ -1,0 +1,10 @@
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\bin\Debug\Modemy_Obiedzinska_Martynienka.exe.config
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\bin\Debug\Modemy_Obiedzinska_Martynienka.exe
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\bin\Debug\Modemy_Obiedzinska_Martynienka.pdb
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\obj\Debug\Modemy_Obiedzinska_Martynienka.csprojAssemblyReference.cache
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\obj\Debug\Modemy_Obiedzinska_Martynienka.Form1.resources
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\obj\Debug\Modemy_Obiedzinska_Martynienka.Properties.Resources.resources
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\obj\Debug\Modemy_Obiedzinska_Martynienka.csproj.GenerateResource.cache
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\obj\Debug\Modemy_Obiedzinska_Martynienka.csproj.CoreCompileInputs.cache
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\obj\Debug\Modemy_Obiedzinska_Martynienka.exe
+C:\Users\lab\source\repos\Modemy_Obiedzinska_Martynienka\Modemy_Obiedzinska_Martynienka\obj\Debug\Modemy_Obiedzinska_Martynienka.pdb

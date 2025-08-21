@@ -1,0 +1,56 @@
+MDF Database:  version 1.0
+MDF_INFO | Schemat | XC9572XL-10-PC44
+MACROCELL | 3 | 13 | Q_1_OBUF
+ATTRIBUTES | 4629314 | 0
+OUTPUTMC | 3 | 3 | 13 | 1 | 1 | 3 | 14
+INPUTS | 5 | Q<0>  | DIR  | Q<1>  | Q<2>  | CE
+INPUTMC | 3 | 1 | 1 | 3 | 13 | 3 | 14
+INPUTP | 2 | 3 | 7
+EQ | 6 | 
+   Q<1>.T = Q<0> & !DIR
+	# !Q<1> & Q<2> & DIR
+	# Q<1> & !Q<0> & !Q<2> & DIR;
+   Q<1>.CLK = CLK;	// GCK
+   Q<1>.AR = CLR;	// GSR
+   Q<1>.CE = CE;
+GLOBALS | 2 | 2 | CLK | 4 | CLR
+
+MACROCELL | 1 | 1 | Q_0_OBUF
+ATTRIBUTES | 8823618 | 0
+OUTPUTMC | 3 | 3 | 13 | 1 | 1 | 3 | 14
+INPUTS | 5 | Q<1>  | Q<0>  | Q<2>  | DIR  | CE
+INPUTMC | 3 | 3 | 13 | 1 | 1 | 3 | 14
+INPUTP | 2 | 3 | 7
+EQ | 7 | 
+   Q<0>.D = Q<1> & !Q<0>
+	# Q<1> & !Q<2> & !DIR
+	# !Q<1> & Q<2> & DIR
+	# !Q<0> & !Q<2> & !DIR;
+   Q<0>.CLK = CLK;	// GCK
+   Q<0>.AR = CLR;	// GSR
+   Q<0>.CE = CE;
+GLOBALS | 2 | 2 | CLK | 4 | CLR
+
+MACROCELL | 3 | 14 | Q_2_OBUF
+ATTRIBUTES | 8823618 | 0
+OUTPUTMC | 3 | 3 | 13 | 1 | 1 | 3 | 14
+INPUTS | 5 | Q<1>  | Q<2>  | Q<0>  | DIR  | CE
+INPUTMC | 3 | 3 | 13 | 3 | 14 | 1 | 1
+INPUTP | 2 | 3 | 7
+EQ | 7 | 
+   Q<2>.D = Q<1> & Q<2>
+	# Q<1> & Q<0> & !DIR
+	# !Q<1> & !Q<0> & DIR
+	# Q<0> & Q<2> & !DIR;
+   Q<2>.CLK = CLK;	// GCK
+   Q<2>.AR = CLR;	// GSR
+   Q<2>.CE = CE;
+GLOBALS | 2 | 2 | CLK | 4 | CLR
+
+PIN | CE | 64 | 0 | N/A | 7 | 3 | 3 | 13 | 1 | 1 | 3 | 14
+PIN | CLK | 16384 | 0 | N/A | 24 | 3 | 3 | 13 | 1 | 1 | 3 | 14
+PIN | CLR | 65536 | 0 | N/A | 92 | 3 | 3 | 13 | 1 | 1 | 3 | 14
+PIN | DIR | 64 | 0 | N/A | 3 | 3 | 3 | 13 | 1 | 1 | 3 | 14
+PIN | Q<1> | 536871040 | 0 | N/A | 72
+PIN | Q<0> | 536871040 | 0 | N/A | 87
+PIN | Q<2> | 536871040 | 0 | N/A | 82

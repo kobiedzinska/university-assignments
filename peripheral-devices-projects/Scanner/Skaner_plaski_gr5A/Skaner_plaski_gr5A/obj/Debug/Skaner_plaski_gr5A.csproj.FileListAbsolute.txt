@@ -1,0 +1,12 @@
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\bin\Debug\Skaner_plaski_gr5A.exe.config
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\bin\Debug\Skaner_plaski_gr5A.exe
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\bin\Debug\Skaner_plaski_gr5A.pdb
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.csprojAssemblyReference.cache
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.Form1.resources
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.Properties.Resources.resources
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.csproj.GenerateResource.cache
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.csproj.CoreCompileInputs.cache
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.exe
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.pdb
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Interop.WIA.dll
+C:\Users\lab\source\repos\Skaner_plaski_gr5A\Skaner_plaski_gr5A\obj\Debug\Skaner_plaski_gr5A.csproj.ResolveComReference.cache

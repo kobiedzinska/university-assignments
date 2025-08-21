@@ -1,0 +1,135 @@
+MDF Database:  version 1.0
+MDF_INFO | Z2 | XC9572XL-10-PC44
+MACROCELL | 1 | 11 | state_FSM_FFd1
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 9 | 1 | 11 | 1 | 17 | 1 | 15 | 1 | 1 | 1 | 16 | 1 | 10 | 1 | 14 | 1 | 12 | 1 | 13
+INPUTS | 5 | CE  | RST  | state_FSM_FFd1  | X  | state_FSM_FFd2
+INPUTMC | 2 | 1 | 11 | 1 | 17
+INPUTP | 3 | 7 | 92 | 3
+EQ | 3 | 
+   state_FSM_FFd1.D = !CE & !RST & state_FSM_FFd1
+	# X & CE & !RST & state_FSM_FFd2;
+   state_FSM_FFd1.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 17 | state_FSM_FFd2
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 9 | 1 | 11 | 1 | 17 | 1 | 15 | 1 | 1 | 1 | 16 | 1 | 10 | 1 | 14 | 1 | 12 | 1 | 13
+INPUTS | 6 | X  | CE  | RST  | state_FSM_FFd1  | state_FSM_FFd3  | state_FSM_FFd2
+INPUTMC | 3 | 1 | 11 | 1 | 15 | 1 | 17
+INPUTP | 3 | 3 | 7 | 92
+EQ | 5 | 
+   state_FSM_FFd2.D = !CE & !RST & state_FSM_FFd2
+	# !RST & !state_FSM_FFd1 & state_FSM_FFd2
+	# X & CE & !RST & state_FSM_FFd1 & state_FSM_FFd3
+	# !X & CE & !RST & !state_FSM_FFd2 & state_FSM_FFd3;
+   state_FSM_FFd2.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 15 | state_FSM_FFd3
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 7 | 1 | 17 | 1 | 15 | 1 | 16 | 1 | 10 | 1 | 14 | 1 | 12 | 1 | 13
+INPUTS | 6 | X  | CE  | RST  | state_FSM_FFd3  | state_FSM_FFd1  | state_FSM_FFd2
+INPUTMC | 3 | 1 | 15 | 1 | 11 | 1 | 17
+INPUTP | 3 | 3 | 7 | 92
+EQ | 4 | 
+   state_FSM_FFd3.D = !X & CE & !RST
+	# !CE & !RST & state_FSM_FFd3
+	# CE & !RST & !state_FSM_FFd1 & state_FSM_FFd2;
+   state_FSM_FFd3.CLK = CLK;	// GCK
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 3 | 13 | Q_0
+ATTRIBUTES | 8651698 | 0
+INPUTS | 2 | Q_0/Q_0_RSTF  | $OpTx$$OpTx$FX_DC$5_INV$34
+INPUTMC | 2 | 1 | 16 | 1 | 10
+EQ | 4 | 
+   Q<0>.D = Gnd;
+   Q<0>.CLK = Gnd;
+   Q<0>.AP = !Q_0/Q_0_RSTF & !$OpTx$$OpTx$FX_DC$5_INV$34;
+   Q<0>.AR = Q_0/Q_0_RSTF;
+
+MACROCELL | 3 | 14 | Q_1
+ATTRIBUTES | 8651698 | 0
+INPUTS | 2 | Q_1/Q_1_SETF  | $OpTx$$OpTx$FX_DC$5_INV$34
+INPUTMC | 2 | 1 | 14 | 1 | 10
+EQ | 4 | 
+   Q<1>.D = Gnd;
+   Q<1>.CLK = Gnd;
+   Q<1>.AP = Q_1/Q_1_SETF;
+   Q<1>.AR = !$OpTx$$OpTx$FX_DC$5_INV$34 & !Q_1/Q_1_SETF;
+
+MACROCELL | 3 | 16 | Q_2
+ATTRIBUTES | 8651698 | 0
+INPUTS | 2 | Q_2/Q_2_SETF  | Q_2/Q_2_RSTF
+INPUTMC | 2 | 1 | 12 | 1 | 13
+EQ | 4 | 
+   Q<2>.D = Gnd;
+   Q<2>.CLK = Gnd;
+   Q<2>.AP = Q_2/Q_2_SETF;
+   Q<2>.AR = Q_2/Q_2_RSTF;
+
+MACROCELL | 1 | 1 | Y_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | X  | state_FSM_FFd1  | state_FSM_FFd2
+INPUTMC | 2 | 1 | 11 | 1 | 17
+INPUTP | 1 | 3
+EQ | 1 | 
+   Y = X & state_FSM_FFd1 & !state_FSM_FFd2;
+
+MACROCELL | 1 | 16 | Q_0/Q_0_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 3 | 13
+INPUTS | 3 | state_FSM_FFd1  | state_FSM_FFd2  | state_FSM_FFd3
+INPUTMC | 3 | 1 | 11 | 1 | 17 | 1 | 15
+EQ | 3 | 
+   Q_0/Q_0_RSTF = !state_FSM_FFd1 & state_FSM_FFd2
+	# !state_FSM_FFd1 & !state_FSM_FFd3
+	# state_FSM_FFd2 & !state_FSM_FFd3;
+
+MACROCELL | 1 | 10 | $OpTx$$OpTx$FX_DC$5_INV$34
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 3 | 13 | 3 | 14
+INPUTS | 4 | X  | state_FSM_FFd1  | state_FSM_FFd2  | state_FSM_FFd3
+INPUTMC | 3 | 1 | 11 | 1 | 17 | 1 | 15
+INPUTP | 1 | 3
+EQ | 2 | 
+   $OpTx$$OpTx$FX_DC$5_INV$34 = !X & state_FSM_FFd1 & !state_FSM_FFd2 & 
+	!state_FSM_FFd3;
+
+MACROCELL | 1 | 14 | Q_1/Q_1_SETF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 3 | 14
+INPUTS | 3 | state_FSM_FFd1  | state_FSM_FFd2  | state_FSM_FFd3
+INPUTMC | 3 | 1 | 11 | 1 | 17 | 1 | 15
+EQ | 2 | 
+   Q_1/Q_1_SETF = state_FSM_FFd1 & state_FSM_FFd3
+	# !state_FSM_FFd1 & state_FSM_FFd2;
+
+MACROCELL | 1 | 12 | Q_2/Q_2_SETF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 4 | state_FSM_FFd2  | state_FSM_FFd3  | X  | state_FSM_FFd1
+INPUTMC | 3 | 1 | 17 | 1 | 15 | 1 | 11
+INPUTP | 1 | 3
+EQ | 2 | 
+   Q_2/Q_2_SETF = state_FSM_FFd2 & !state_FSM_FFd3
+	# X & state_FSM_FFd1 & !state_FSM_FFd3;
+
+MACROCELL | 1 | 13 | Q_2/Q_2_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 3 | state_FSM_FFd3  | state_FSM_FFd1  | state_FSM_FFd2
+INPUTMC | 3 | 1 | 15 | 1 | 11 | 1 | 17
+EQ | 2 | 
+   Q_2/Q_2_RSTF = state_FSM_FFd3
+	# !state_FSM_FFd1 & !state_FSM_FFd2;
+
+PIN | X | 64 | 0 | N/A | 3 | 6 | 1 | 11 | 1 | 17 | 1 | 15 | 1 | 1 | 1 | 10 | 1 | 12
+PIN | CE | 64 | 0 | N/A | 7 | 3 | 1 | 11 | 1 | 17 | 1 | 15
+PIN | CLK | 16384 | 0 | N/A | 24 | 3 | 1 | 11 | 1 | 17 | 1 | 15
+PIN | RST | 64 | 0 | N/A | 92 | 3 | 1 | 11 | 1 | 17 | 1 | 15
+PIN | Q<0> | 536871040 | 0 | N/A | 72
+PIN | Q<1> | 536871040 | 0 | N/A | 82
+PIN | Q<2> | 536871040 | 0 | N/A | 83
+PIN | Y | 536871040 | 0 | N/A | 87

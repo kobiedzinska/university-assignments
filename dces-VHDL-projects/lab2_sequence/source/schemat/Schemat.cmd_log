@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/XilinxPrj/Sekwencyjny/Schemat.xst" -ofn "C:/XilinxPrj/Sekwencyjny/Schemat.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/lab/Desktop/ZL-9572.ucf -p xc9572xl-PC44-10 Schemat.ngc Schemat.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Schemat.ngd 
+XSLTProcess Schemat_build.xml 
+tsim -intstyle ise Schemat Schemat.nga 
+taengine -intstyle ise -f Schemat -w --format html1 -l Schemat_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Schemat -i Schemat 
+xst -intstyle ise -ifn "C:/XilinxPrj/Sekwencyjny/Schemat.xst" -ofn "C:/XilinxPrj/Sekwencyjny/Schemat.syr" 
+xst -intstyle ise -ifn "C:/XilinxPrj/Sekwencyjny/Schemat.xst" -ofn "C:/XilinxPrj/Sekwencyjny/Schemat.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/lab/Desktop/ZL-9572.ucf -p xc9572xl-PC44-10 Schemat.ngc Schemat.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Schemat.ngd 
+XSLTProcess Schemat_build.xml 
+tsim -intstyle ise Schemat Schemat.nga 
+hprep6 -s IEEE1149 -n Schemat -i Schemat 

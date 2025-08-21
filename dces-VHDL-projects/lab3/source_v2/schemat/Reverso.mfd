@@ -1,0 +1,45 @@
+MDF Database:  version 1.0
+MDF_INFO | Reverso | XC9572XL-10-PC44
+MACROCELL | 3 | 13 | Q_1_OBUF
+ATTRIBUTES | 4621058 | 0
+OUTPUTMC | 2 | 1 | 1 | 3 | 14
+INPUTS | 3 | dir  | Q<0>  | Q<2>
+INPUTMC | 2 | 1 | 1 | 3 | 14
+INPUTP | 1 | 3
+EQ | 3 | 
+   !Q<1>.T = dir & Q<0> & !Q<2>
+	# !dir & !Q<0> & !Q<2>;
+   Q<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 1 | Q_0_OBUF
+ATTRIBUTES | 4621058 | 0
+OUTPUTMC | 3 | 3 | 13 | 1 | 1 | 3 | 14
+INPUTS | 4 | dir  | Q<1>  | Q<2>  | Q<0>
+INPUTMC | 3 | 3 | 13 | 3 | 14 | 1 | 1
+INPUTP | 1 | 3
+EQ | 4 | 
+   !Q<0>.T = dir & !Q<1> & Q<2>
+	# !dir & Q<1> & Q<0> & !Q<2>
+	# !dir & Q<1> & !Q<0> & Q<2>;
+   Q<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 14 | Q_2_OBUF
+ATTRIBUTES | 4621058 | 0
+OUTPUTMC | 3 | 3 | 13 | 1 | 1 | 3 | 14
+INPUTS | 4 | dir  | Q<1>  | Q<0>  | Q<2>
+INPUTMC | 3 | 3 | 13 | 1 | 1 | 3 | 14
+INPUTP | 1 | 3
+EQ | 4 | 
+   Q<2>.T = !dir & Q<1> & Q<0>
+	# dir & !Q<1> & Q<0> & Q<2>
+	# dir & !Q<1> & !Q<0> & !Q<2>;
+   Q<2>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+PIN | dir | 64 | 0 | N/A | 3 | 3 | 3 | 13 | 1 | 1 | 3 | 14
+PIN | clk | 4096 | 0 | N/A | 20 | 3 | 3 | 13 | 1 | 1 | 3 | 14
+PIN | Q<1> | 536871040 | 0 | N/A | 72
+PIN | Q<0> | 536871040 | 0 | N/A | 87
+PIN | Q<2> | 536871040 | 0 | N/A | 82

@@ -1,0 +1,42 @@
+MDF Database:  version 1.0
+MDF_INFO | schemat | XC9572XL-10-PC44
+MACROCELL | 1 | 1 | Y_0_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 4 | X<0>  | X<2>  | X<1>  | X<3>
+INPUTP | 4 | 89 | 59 | 88 | 92
+EQ | 2 | 
+   !Y<0> = X<0>
+	$ X<2> & X<1> & X<3>;
+
+MACROCELL | 3 | 13 | Y_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | X<2>  | X<3>  | X<1>
+INPUTP | 3 | 59 | 92 | 88
+EQ | 2 | 
+   Y<1> = X<2> & X<3>
+	$ X<1>;
+
+MACROCELL | 3 | 14 | Y_2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | X<2>  | X<1>  | X<0>
+INPUTP | 3 | 59 | 88 | 89
+EQ | 2 | 
+   Y<2> = X<2>
+	$ X<1> & X<0>;
+
+MACROCELL | 3 | 16 | Y_3_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 4 | X<3>  | X<2>  | X<1>  | X<0>
+INPUTP | 4 | 92 | 59 | 88 | 89
+EQ | 2 | 
+   !Y<3> = X<3>
+	$ X<2> & X<1> & X<0>;
+
+PIN | X<2> | 64 | 0 | N/A | 59 | 4 | 1 | 1 | 3 | 13 | 3 | 14 | 3 | 16
+PIN | X<1> | 64 | 0 | N/A | 88 | 4 | 1 | 1 | 3 | 13 | 3 | 14 | 3 | 16
+PIN | X<0> | 64 | 0 | N/A | 89 | 3 | 1 | 1 | 3 | 14 | 3 | 16
+PIN | X<3> | 64 | 0 | N/A | 92 | 3 | 1 | 1 | 3 | 13 | 3 | 16
+PIN | Y<0> | 536871040 | 0 | N/A | 87
+PIN | Y<1> | 536871040 | 0 | N/A | 72
+PIN | Y<2> | 536871040 | 0 | N/A | 82
+PIN | Y<3> | 536871040 | 0 | N/A | 83

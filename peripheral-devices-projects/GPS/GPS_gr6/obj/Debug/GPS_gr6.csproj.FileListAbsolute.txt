@@ -1,0 +1,10 @@
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\bin\Debug\GPS_gr6.exe.config
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\bin\Debug\GPS_gr6.exe
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\bin\Debug\GPS_gr6.pdb
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\obj\Debug\GPS_gr6.csprojAssemblyReference.cache
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\obj\Debug\GPS_gr6.Form1.resources
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\obj\Debug\GPS_gr6.Properties.Resources.resources
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\obj\Debug\GPS_gr6.csproj.GenerateResource.cache
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\obj\Debug\GPS_gr6.csproj.CoreCompileInputs.cache
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\obj\Debug\GPS_gr6.exe
+C:\Users\lab\source\repos\GPS_gr6\GPS_gr6\obj\Debug\GPS_gr6.pdb

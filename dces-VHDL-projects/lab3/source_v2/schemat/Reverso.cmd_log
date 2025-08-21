@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/XilinxPrj/UCISW3v2/Reverso.xst" -ofn "C:/XilinxPrj/UCISW3v2/Reverso.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/lab/Desktop/ZL-9572.ucf -p xc9572xl-PC44-10 Reverso.ngc Reverso.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Reverso.ngd 
+XSLTProcess Reverso_build.xml 
+tsim -intstyle ise Reverso Reverso.nga 
+taengine -intstyle ise -f Reverso -w --format html1 -l Reverso_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Reverso -i Reverso 
+xst -intstyle ise -ifn "C:/XilinxPrj/UCISW3v2/Reverso.xst" -ofn "C:/XilinxPrj/UCISW3v2/Reverso.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/lab/Desktop/ZL-9572.ucf -p xc9572xl-PC44-10 Reverso.ngc Reverso.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Reverso.ngd 
+XSLTProcess Reverso_build.xml 
+tsim -intstyle ise Reverso Reverso.nga 
+hprep6 -s IEEE1149 -n Reverso -i Reverso 
