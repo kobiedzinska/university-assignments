@@ -1,0 +1,9 @@
+package Model.Enumeration;
+
+public enum PetitionStatus {
+	OCZEKUJACY,
+	ODRZUCONY,
+	ZWERYFIKOWANY,
+	ZATWIERDZONY,
+	ZWERYFIKOWANY_PRZEZ_SYSTEM
+}
